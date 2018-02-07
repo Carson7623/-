@@ -40,7 +40,7 @@ class Error
             $e = new ThrowableError($e);
         }
 
-        self::getExceptionHandler()->report($e);
+         self::getExceptionHandler()->report($e);
         if (IS_CLI) {
             self::getExceptionHandler()->renderForConsole(new ConsoleOutput, $e);
         } else {

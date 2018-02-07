@@ -1,0 +1,1 @@
+<?phpnamespace app\common\lib;class IAuth{    /**     * 密码Md5     * @param  string    $data     * @return string     */    public static function setPassword($data)    {        return md5($data . config('app.password_pre'));    }}
